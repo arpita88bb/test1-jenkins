@@ -1,5 +1,3 @@
-FROM hshar/webapp
+FROM nginx
 
-RUN rm -f /var/www/html/index.html
-
-ADD ./index.html /var/www/html/
+COPY . /usr/share/nginx/html
